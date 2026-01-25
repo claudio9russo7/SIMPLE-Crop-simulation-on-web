@@ -1,0 +1,5 @@
+[
+  { "label": "Demo", "file": "Weather_demo.csv" },
+  { "label": "Anno secco", "file": "Weather_anno_secco.csv" },
+  { "label": "Anno umido", "file": "Weather_anno_umido.csv" }
+]

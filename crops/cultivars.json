@@ -1,0 +1,53 @@
+[
+  {
+    "id": "wheat_default",
+    "species_id": "wheat",
+    "label": "Batten",
+    "params": {
+      "tsum": 2150,
+      "hi": 0.34,
+      "i50a": 280,
+      "i50b0": 50
+    },
+    "ranges": {
+      "tsum": {"min": 600, "max": 6600, "step": 10},
+      "hi": {"min": 0.05, "max": 0.9, "step": 0.01},
+      "i50a": {"min": 50, "max": 690, "step": 10},
+      "i50b0": {"min": 50, "max": 600, "step": 10}
+    }
+  },
+  {
+    "id": "corn_default",
+    "species_id": "Corn",
+    "label": "McCurdy",
+    "params": {
+      "tsum": 2050,
+      "hi": 0.50,
+      "i50a": 500,
+      "i50b0": 50
+    },
+    "ranges": {
+      "tsum": {"min": 600, "max": 6600, "step": 10},
+      "hi": {"min": 0.05, "max": 0.9, "step": 0.01},
+      "i50a": {"min": 50, "max": 690, "step": 10},
+      "i50b0": {"min": 50, "max": 600, "step": 10}
+    }
+  },
+  {
+    "id": "tomato_default",
+    "species_id": "tomato",
+    "label": "SunnySD",
+    "params": {
+      "tsum": 2800,
+      "hi": 0.68,
+      "i50a": 520,
+      "i50b0": 400
+    },
+    "ranges": {
+      "tsum": {"min": 600, "max": 6600, "step": 10},
+      "hi": {"min": 0.05, "max": 0.9, "step": 0.01},
+      "i50a": {"min": 50, "max": 690, "step": 10},
+      "i50b0": {"min": 50, "max": 600, "step": 10}
+    }
+  }
+]
