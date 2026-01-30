@@ -1,0 +1,59 @@
+:root{
+      --bg:#0b0f14;
+      --panel:#101826;
+      --card:#0f1724;
+      --text:#e6eefc;
+      --muted:#9bb0ce;
+      --border:rgba(255,255,255,0.12);
+      --btn:#1e293b;
+      --btnHover:#273548;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--text); height:100vh; display:grid; grid-template-columns: 380px 1fr;}
+    #panel{padding:16px; border-right:1px solid var(--border); background:linear-gradient(180deg, var(--panel), #0b0f14); overflow:auto;}
+    h1{font-size:16px;margin:0 0 6px}
+    .sub{color:var(--muted);font-size:12px;margin-bottom:12px;line-height:1.35}
+    .box{background:rgba(255,255,255,0.04); border:1px solid var(--border); border-radius:14px; padding:12px; margin:10px 0;}
+    .row{display:flex;gap:10px;align-items:center;justify-content:space-between}
+    label{font-size:12px;color:var(--muted)}
+    input[type="range"]{width:100%}
+    input[type="number"]{width:110px; padding:8px 10px; border-radius:12px; border:1px solid var(--border); background:rgba(0,0,0,0.25); color:var(--text)}
+    button{padding:9px 12px;border-radius:12px;border:1px solid var(--border);background:var(--btn);color:var(--text);cursor:pointer}
+    button:hover{background:var(--btnHover)}
+    button:disabled{opacity:0.5;cursor:not-allowed}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap}
+    .kv{display:grid;grid-template-columns:1fr auto;gap:6px 10px;font-size:12px;color:var(--muted)}
+    .kv b{color:var(--text);font-weight:600}
+    details summary{cursor:pointer;color:var(--muted);font-size:12px}
+
+    #main{display:grid;grid-template-rows: 1fr 300px; gap:14px; padding:14px;}
+    .stage{background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:16px; padding:12px; display:grid; grid-template-columns: 1fr 420px; gap:12px;}
+    canvas#sim{width:100%; height:100%; background:rgba(0,0,0,0.25); border:1px solid var(--border); border-radius:16px;}
+    .rightcol{display:grid;grid-template-rows:auto 1fr; gap:10px}
+    .statcard{background:rgba(255,255,255,0.03); border:1px solid var(--border); border-radius:16px; padding:12px;}
+    .statcard h2{font-size:13px;margin:0 0 8px;color:var(--text)}
+    #chartWrap{background:transparent; border:none; border-radius:0; padding:0;}
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+    @media (max-width: 1100px){ .grid2{grid-template-columns:1fr;} }
+    #chart{width:100%; height:260px;}
+    .tiny{font-size:11px;color:var(--muted);line-height:1.35}
+    .bottomrow{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:14px;
+    }
+    #meteoChart{width:100%; height:220px;}
+    #meteoChartWrap{
+        background:rgba(255,255,255,0.03);
+        border:1px solid var(--border);
+        border-radius:16px;
+        padding:10px;
+    }
+    @media (max-width: 1100px){
+        .bottomrow{grid-template-columns:1fr;}
+    }
+    #speciesGrid input:disabled{
+  opacity:0.45;
+  filter:grayscale(1);
+  cursor:not-allowed;
+}
